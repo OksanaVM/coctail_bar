@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <ImageView
+        android:id="@+id/cocktailImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/summer_holidays_1__1_" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:text="My сocktails"
+        android:textColor="#313131"
+        android:textSize="36sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/addCocktailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/verticalArrow"
+        android:text="Add your first\ncocktail here"
+        android:textSize="14sp"
+        android:textColor="#808080" />
+
+    <ImageView
+        android:id="@+id/verticalArrow"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_above="@id/addCocktailButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="193dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/ic_vertical_arrow" />
+
+    <Button
+        android:id="@+id/addCocktailButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="154dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/round_button_background"
+        android:paddingStart="24dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="8dp"
+        android:text="+"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+</RelativeLayout>
