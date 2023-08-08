@@ -113,7 +113,7 @@
         android:background="@drawable/frame_27__1_"
         android:text=""
         app:layout_constraintEnd_toStartOf="@+id/cocktailButton3"
-        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintHorizontal_bias="0.417"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="350dp" />
@@ -138,6 +138,33 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_cocktail_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="588dp"
+
+        android:paddingHorizontal="28dp"
+        android:paddingVertical="28dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+
+        app:spanCount="2"
+        tools:ignore="UnknownId"
+        tools:layout_editor_absoluteX="51dp"
+        tools:listitem="@layout/item_cocktail"
+        android:background="#80F5F5F5"/>
+
+<com.google.android.material.bottomappbar.BottomAppBar
+android:id="@+id/bab_menu"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_gravity="bottom"
+android:minHeight="60dp"
+
+    tools:ignore="BottomAppBar,MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
